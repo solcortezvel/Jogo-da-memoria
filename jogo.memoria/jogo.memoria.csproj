@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{633E3016-D3AF-4D3D-925E-5BEE549899A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>jogo.memoria</RootNamespace>
+    <AssemblyName>jogo.memoria</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLevel1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLevel1.Designer.cs">
+      <DependentUpon>FormLevel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLevel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLevel2.Designer.cs">
+      <DependentUpon>FormLevel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLevel3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLevel3.Designer.cs">
+      <DependentUpon>FormLevel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLose.Designer.cs">
+      <DependentUpon>FormLose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWin.Designer.cs">
+      <DependentUpon>FormWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLevel1.resx">
+      <DependentUpon>FormLevel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLevel2.resx">
+      <DependentUpon>FormLevel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLevel3.resx">
+      <DependentUpon>FormLevel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLose.resx">
+      <DependentUpon>FormLose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWin.resx">
+      <DependentUpon>FormWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\un-vaso-conteniendo-tres-elementos-aire-agua-y-arena-duplicacion-de-elementos-reales-en-el-fondo-cielo-mar-y-playa-k88jpm-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escudo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escudo-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconVolume.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ukulele.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ukulele.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-game-or-start-symbol-colorful-game-button-png-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura_de_pantalla_2023-09-30_113203-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snk-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snkk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titans-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erenfeliz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rumbling.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong-or-exit-or-close-game-symbol-colorful-game-button-png-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titans.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
